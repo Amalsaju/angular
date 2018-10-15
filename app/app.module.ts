@@ -1,24 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { BodyModule } from './body/body.module';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
+import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
-import { BodyComponent } from './body/body.component';
-import { HomeComponent } from './modules/home/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    BodyComponent,
-    HomeComponent
+    NavComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AngularFontAwesomeModule
+    BodyModule
   ],
   providers: [],
   bootstrap: [AppComponent]
